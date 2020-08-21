@@ -102,8 +102,6 @@ class Ticker(TickerBase):
             "calls": self._options2df(options['calls'], tz=tz),
             "puts": self._options2df(options['puts'], tz=tz)
         })
-    def property_list(self):
-        return [p for p in dir(self) if isinstance(getattr(self,p),property)]
     # ------------------------
 
     @property

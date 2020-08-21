@@ -28,9 +28,9 @@ def test_yfinance():
         assert(ticker.history(period="max").empty is False)
 
         # following should always gracefully handled, no crashes
-        ticker.cashflow
-        ticker.balance_sheet
-        ticker.financials
+        print(ticker.cashflow)
+        # ticker.balance_sheet
+        # ticker.financials
         ticker.sustainability
         ticker.major_holders
         ticker.institutional_holders
